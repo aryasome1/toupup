@@ -118,15 +118,63 @@ margin-left: 40%;
 }
 
 .valorant-right {
+  color: #ddd;
   flex: 3;
   padding: 10px;
   width: 100%;
-  background-color: #0a0909;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .main-container .valorant-left,
 .main-container .valorant-right {
   border-radius: 8px;
+}
+
+.user-id {
+  background-color: #0a0909;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.input-id {
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  width: 35%;
+}
+
+.nominal-topup {
+  margin-top: 15px;
+}
+
+.container-nominal {
+  background-color: #0a0909;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.vp {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.nominal {
+  cursor: pointer;
+  padding: 5px;
+  background-color: #dd4b39;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.nominal:hover {
+  background-color: #a03628;
 }
 
  
