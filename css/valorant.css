@@ -91,17 +91,43 @@
   
   
   /* CSS UNTUK ISI */
-  .isi{
-    background-color: #DBE2EF;
-    
-  }
+.isi{
+  background-color: #DBE2EF;
+  
+}
 .valo{
   background-color: #0a0909;
 }
- .text-foto{
-  height: 140px;
-  margin-left: 40%;
- }
+.text-foto{
+height: 140px;
+margin-left: 40%;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  gap: 30px;
+}
+
+.valorant-left {
+  flex: 1;
+  padding: 10px;
+  width: 100%;
+  background-color: #0a0909;
+}
+
+.valorant-right {
+  flex: 3;
+  padding: 10px;
+  width: 100%;
+  background-color: #0a0909;
+}
+
+.main-container .valorant-left,
+.main-container .valorant-right {
+  border-radius: 8px;
+}
 
  
   /* BAGIAN FOOTER */
