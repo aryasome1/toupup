@@ -93,14 +93,19 @@
   /* CSS UNTUK ISI */
 .isi{
   background-color: #DBE2EF;
+  padding: 0px 100px;
   
 }
 .valo{
   background-color: #0a0909;
+  border-radius: 10px;
 }
+
 .text-foto{
-height: 140px;
-margin-left: 40%;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  filter: blur(4px);
 }
 
 .main-container {
@@ -112,9 +117,24 @@ margin-left: 40%;
 
 .valorant-left {
   flex: 1;
-  padding: 10px;
+  color: #ddd;
   width: 100%;
   background-color: #0a0909;
+}
+
+.left-img-container {
+  width: 100%;
+}
+
+.left-img-container>img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.left-isi {
+  padding: 10px;
 }
 
 .valorant-right {
@@ -177,6 +197,24 @@ margin-left: 40%;
   background-color: #a03628;
 }
 
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #0a0909;
+  padding: 20px;
+  border-radius: 8px;
+  gap: 15px;
+}
+
+.payment-form select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #dd4b39;
+  color: #ddd;
+  font-weight: bold;
+  margin-top: 2px;
+}
  
   /* BAGIAN FOOTER */
   .footer{
