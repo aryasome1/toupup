@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  
+  font-family: "SharpSansNo1-Bold";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo{
+  vertical-align: top;
+  width: 70px;
+  height: 54px;
+  margin-left: 10px;
+  margin-top: 7px;
+  margin-right: 15px;
+  float: left;
+}
+
+.navbar{
+  text-align: center;
+  background-color: #F9F7F7;
+  font-size: 17px;
+  height: 70px;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  color: #0a0909;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 7px;
+}
+
+.navbar a:hover {
+  color: rgb(137, 51, 51);
+  height: fit-content;
+  
+}
+
+.navbar a:active{
+  color: #cb3636;
+}
+
+.navbar .search-container{
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .search-container {
+    float: none;
+  }
+
+  .navbar input[type=text] {
+    border: 1px solid #d62828;  
+  }
+}
+
+
+/* CSS UNTUK ISI */
+.isi{
+  background-color: #DBE2EF;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-family: "SharpSansNo1-Bold";
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  top: 60%;
+}
+
+.prev {
+  top: 60%;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.images {
+
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+
+.middle{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mySlides img {
+
+  border: 6px solid #3F72AF;
+  border-radius: 3px;
+  
+}
+
+.mySlides:hover .images {
+  opacity: 0.3;
+}
+
+.mySlides:hover .middle {
+  opacity: 1;
+}
+
+.text {
+
+  background-color:  rgba(0,0,0,0.3);
+  color: white;
+  font-size: 32px;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin-top: 20%;
+  
+}
+
+#title-game{
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.image{
+  
+  justify-content: center;
+  border: 6px solid #3F72AF;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+/* BAGIAN FOOTER */
+.footer{
+  background-color: #F9F7F7;
+  font-size: 17px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  text-align: center;
+  
+}
+
+
+#copyright{
+  text-align: center;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
